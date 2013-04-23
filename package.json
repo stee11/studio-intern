@@ -1,0 +1,25 @@
+{
+  "name": "Wiredset_Intern_Testing",
+  "version": "0.0.1",
+  "description": "Wiredset Intern Testing",
+  "main": "server.js",
+  "dependencies": {
+    "matador": "git+ssh://git@github.com:Obvious/matador.git",
+    "connect-flash": "~0.1.0",
+    "rbytes": "~0.0.2",
+    "winston": "~0.6.2",
+    "colors": "0.6.0-1",
+    "toobusy": "~0.2.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Wiredset/studio-intern.git"
+  },
+  "keywords": [],
+  "private": true,
+  "author": "Wiredset",
+  "readmeFilename": "README.md"
+}

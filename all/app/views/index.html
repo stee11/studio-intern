@@ -1,0 +1,31 @@
+<div id="main">
+    <h1>Congratulations, you're running a node app.</h1>
+    <p>Goal: Create an application that polls the server for new data on an interval and updates the frontend page with that data</p>
+    <ul>
+      <li>Create a new route ("/api/number") on the backend</li>
+      <li>Create a new controller that will interact with the route you just created</li>
+      <li>The response to the front end should be JSON (use this.jsonCollectionOutput())</li>
+      <li>Have the response generate a random number</li>
+      <li>Update app.js to perform AJAX requests poll the server on an interval</li>
+      <li>Have the response update the "target" element on this page</li>
+    </ul>
+    <p>The only files you should need to work with are located in /all/app/config/, /all/app/controllers/, and /all/app/public/static/js/</p>
+    <div id="target">
+      <img src="/static/img/loading.gif" />
+    </div>
+</div>
+
+<script>
+  $LAB
+    .script('/static/js/lib/jquery.js')
+    .script('/static/js/app.js')
+
+    .wait(function() {
+      $(function() {
+        // Instantiate the app
+        window.app = new App();
+        // Start it up
+        window.app.start();
+      });
+    });
+</script>

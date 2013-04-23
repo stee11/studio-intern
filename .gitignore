@@ -1,3 +1,35 @@
+# IGNORED FILES #
+#################
+tmp/
+all/app/public/static/js/templates.js
+all/app/public/static/js/application.js
+all/app/public/static/js/libraries.js
+
+# Database #
+############
+*.sqlite
+
+# JSON #
+########
+all/*.json
+
+# OS files #
+############
+.DS_Store
+.DS_Store?
+Thumbs.db
+
+# IDE files #
+#############
+.settings
+.buildpath
+.project
+*.esproj
+*.sublime*
+.git
+
+# Node files #
+##############
 lib-cov
 *.seed
 *.log
@@ -6,9 +38,5 @@ lib-cov
 *.out
 *.pid
 *.gz
-
-pids
-logs
-results
 
 npm-debug.log
