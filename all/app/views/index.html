@@ -7,9 +7,15 @@
       <li>The response to the front end should be JSON (use this.jsonCollectionOutput())</li>
       <li>Have the response generate a random number</li>
       <li>Update app.js to perform AJAX requests poll the server on an interval</li>
-      <li>Have the response update the "target" element on this page</li>
+      <li>Have the response update the "target" element on this page using jQuery</li>
     </ul>
-    <p>The only files you should need to work with are located in /all/app/config/, /all/app/controllers/, and /all/app/public/static/js/</p>
+
+    <p>Notes:</p>
+    <ul>
+      <li>Route creation is done in /all/app/config/routes.js</li>
+      <li>Controllers are found in /all/app/controllers</li>
+      <li>app.js is found in /all/app/public/static/js
+    </ul>
     <div id="target">
       <img src="/static/img/loading.gif" />
     </div>
@@ -18,6 +24,7 @@
 <script>
   $LAB
     .script('/static/js/lib/jquery.js')
+    .script('/static/js/lib/underscore-min.js')
     .script('/static/js/app.js')
 
     .wait(function() {
